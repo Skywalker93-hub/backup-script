@@ -1,0 +1,9 @@
+[Unit]
+Description=Run archive every day
+
+[Timer]
+OnCalendar=*:*:00
+Unit=archive.service
+
+[Install]
+WantedBy=timers.target
